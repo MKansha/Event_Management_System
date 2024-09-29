@@ -25,7 +25,7 @@ This project is an **Event Management System** with both user and admin function
 
 ### Clone the repository
 
-git clone https://github.com/your-username/event-management-system.git
+git clone https://github.com/MKansha/Event_Management_System.git
 
 cd event-management-system
 
