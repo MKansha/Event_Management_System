@@ -1,0 +1,16 @@
+<!-- templates/events/event_detail.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ event.title }}</title>
+</head>
+<body>
+    <h1>{{ event.title }}</h1>
+    <p>{{ event.description }}</p>
+    <p>Date: {{ event.date }}</p>
+    <p>Location: {{ event.location }}</p>
+    <a href="{% url 'event_list' %}">Back to Events</a>
+</body>
+</html>

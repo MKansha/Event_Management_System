@@ -1,0 +1,92 @@
+.card_icon {
+    transition: transform 0.3s ease;
+  }
+  
+  .card_icon:hover {
+    transform: scale(1.1);
+  }
+  
+  .main-cards {
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr);
+    gap: 100px; 
+    justify-items: center; 
+  }
+  
+  .card {
+    min-width: 300px;
+    border: 3px solid white;
+    padding: 1rem; 
+  }
+  
+  .card h3 {
+    text-align: center;
+  }
+  
+
+.interest-container .interest-head h3{
+  color: #000000;
+  padding: 12px;
+  text-transform: capitalize;
+  text-align: center;
+  margin-bottom: 15px;
+  font-family: "New Rocker", system-ui;
+  font-size: 30px !important;
+}
+.interest-container{
+  margin-top: 3rem !important;
+  margin-bottom: 2rem !important;
+  width: 700px;
+  border: 5px solid #3498db;
+  min-height: 350px !important;
+ margin: 0 auto;
+ margin-bottom: 4rem !important;
+ background-color: white !important;
+ border-radius: 20px;
+
+ 
+}
+.interest-container ul
+{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.interest-container ul li{
+  color: #000000 !important;
+  font-weight: 600;
+  border: 3px solid #3498db;
+  padding:15px 18px;
+  border-radius: 15px;
+  transition: all 0.3s;
+  list-style: none !important;
+  cursor: pointer;
+}
+.interest-container ul li:hover
+{
+  background-color: #3498db;
+  border: 3px solid black;
+  color: #fdfdfd !important;
+  font-weight: 600;
+}
+
+  @media (max-width: 1300px) {
+    .main-cards {
+      gap: 30px; 
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 640px) {
+    .main-cards {
+      gap: 20px; 
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+  
+  @media (max-width: 400px) {
+    .card {
+      min-width: 200px;
+    }
+  }
+  
