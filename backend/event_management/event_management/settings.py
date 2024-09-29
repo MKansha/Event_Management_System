@@ -1,5 +1,9 @@
 from pathlib import Path
 from datetime import timedelta  # Import timedelta for JWT settings
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -9,7 +13,7 @@ DEBUG = True
 ALLOWED_HOSTS = []
 CORS_ALLOW_CREDENTIALS = True
 CORS_ALLOWED_ORIGINS = [
-    "http://localhost:3000",  
+    "http://localhost:3000",
 ]
 
 CORS_ALLOW_ALL_ORIGINS = True
@@ -24,7 +28,7 @@ EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 EMAIL_HOST_USER = 'mkansha2312@gmail.com'  
-EMAIL_HOST_PASSWORD = 'trjt drjf qquv ozvl' 
+EMAIL_HOST_PASSWORD = os.getenv('API_KEY') 
 
 INSTALLED_APPS = [
     'django.contrib.admin',
