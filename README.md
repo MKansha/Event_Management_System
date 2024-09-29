@@ -37,6 +37,8 @@ python -m venv env
 .\env\Scripts\activate
 ## Install dependencies:
 ### 1.Install dependencies:
+pip install django
+
 pip install -r requirements.txt
 ### 2.Apply database migrations:
 python manage.py migrate
